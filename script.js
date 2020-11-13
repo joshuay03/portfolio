@@ -1,6 +1,7 @@
 var i = 0;
 var count = 0;
-var txt = ["Name? Joshua Young.", "Pursuit? Computer Science.", "Interests? Cloud and AI.", "What's this? My portfolio.", "Have a look around!"]
+var txt = ["Name? Joshua Young.", "Pursuit? Computer Science.", 
+    "Interests? Cloud and AI.", "What's this? My portfolio.", "Have a look around!"]
 var speed = 40;
 var delayInMilliseconds = 1000;
 
@@ -20,11 +21,13 @@ function checkFirstVisit() {
 function typeWriter() {
     if (i < txt[count].length) {
         if (txt[count].charAt(i) != '?') {
-            document.getElementById("intro" + count.toString()).innerHTML += txt[count].charAt(i);
+            document.getElementById("intro" + count.toString()).innerHTML 
+                += txt[count].charAt(i);
             i++;
             setTimeout(typeWriter, speed);
         } else {
-            document.getElementById("intro" + count.toString()).innerHTML += txt[count].charAt(i);
+            document.getElementById("intro" + count.toString()).innerHTML 
+                += txt[count].charAt(i);
             i++;
             setTimeout(typeWriter, delayInMilliseconds);
         }
