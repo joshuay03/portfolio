@@ -14,7 +14,6 @@ function checkFirstVisit() {
             document.getElementById("intro" + i.toString()).innerHTML = txt[i];
             i++;
         }
-        document.getElementById("row").style.display = "flex";
     }
 }
 

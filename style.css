@@ -2,9 +2,56 @@ body {
 	background-image: url("Images/background.jpg");
 }
 
+a { 
+	color: rgba(255, 255, 255, 0.25);
+	text-decoration: none;
+}
+
+p {
+	color: rgba(255, 255, 255, 0.25);
+	font-size: 1.5em;
+	font-family: 'Roboto', sans-serif;
+	margin: 0 auto;
+}
+
+video {
+	border-radius: 15px;
+	margin-bottom: 1em;
+	width: 90%;
+}
+
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
 #header {
 	text-align: center;
-	padding: 1.5em 0;
+	font-size: 1.5em;
+	font-family: 'Roboto', sans-serif;
+	margin-top: 1em;
+}
+
+.topnav {
+	margin-bottom: 1.5em;
+}
+
+#projects,
+#resume {
+	margin-left: 0.5em;
+}
+
+.active {
+	color: whitesmoke;
+}
+
+#intro {
+	text-align: center;
 }
 
 #avatar {
@@ -13,26 +60,26 @@ body {
 	border-radius: 50%;
 	border: solid 2px rgba(255, 255, 255, 0.25);
 	box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2);
+	margin-bottom: 1em;
 }
 
 .icons {
-	text-align: center;
-	margin: auto auto 1.5em auto;
+	margin-bottom: 1.5em;
 }
 
 #github,
 #linkedin,
 #facebook,
 #email {
-	width: 47.5px;
-	height: 47.5px;
+	max-width: 47.5px;
+	max-height: 47.5px;
 	outline: none;
 }
 
 #linkedin,
 #facebook,
 #email {
-	padding-inline-start: 1.5em;
+	margin-left: 1.5em;
 }
 
 #github {
@@ -51,16 +98,12 @@ body {
 	content: url(Icons/email.png);
 }
 
-p {
-	color: rgba(255, 255, 255, 0.25);
-	text-align: center;
-	font-size: 1.5em;
-	font-family: 'Roboto', sans-serif;
-	margin: 0 auto;
+.projects {
+	margin-top: 2.5em;
 }
 
 .row {
-	display: none;
+	display: flex;
 	margin: 1.5em auto;
 	flex-wrap: wrap;
 }
@@ -70,6 +113,14 @@ p {
 	border-radius: 10px;
 	width: 25%;
 	margin-bottom: 1.5em;
+}
+
+#container {
+	position: relative;
+	overflow: hidden;
+	max-width: 99%;
+	padding-top: 56.25%;
+	margin: auto;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -82,10 +133,4 @@ p {
 	.column {
 		width: 100%;
 	}
-}
-
-video {
-	border-radius: 15px;
-	margin-bottom: 1em;
-	width: 90%;
 }
